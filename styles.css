@@ -1,0 +1,129 @@
+html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif
+    }
+    
+    body{
+    
+    
+}
+
+.card{
+    /* background-image: url(./img/IMG_0298.JPG); */
+    /* background: rgba(30%,0%,0%,0.6); */
+    /* background:rgba(0,0,0,0.1); */
+    /* opacity:0.4; */
+    background-color:transparent;
+}
+
+.art1 {
+    opacity: 0.4;
+    background-image: url(./img/IMG_0298.JPG);
+  }
+  
+.art1:hover {
+    opacity: 1.0;
+  }
+
+  .contentDiv {
+    /* background-color: orange; */
+    /* height: 200px; */
+    position: relative;
+    /* width: 200px; */
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+html, body { scroll-behavior:smooth; }
+
+
+#myBtn {
+    
+
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none; 
+    outline: none; 
+    /* background-color:#769e51;  */
+    /* color: #769e51; */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    color: #cfbe54; 
+  }
+
+  h6{
+    color: #989a9e;
+  }
+
+
+  /* fade */
+  .container1 {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image1 {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    /* text-align: center; */
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eee;
+  }
+  
+  .container1:hover .overlay {
+    opacity: 0.5;
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
